@@ -6,6 +6,11 @@ app.get('/', (req, res) => {
     }
 );
 
+app.get('/rhea', (req, res) => {
+    res.send('Hello, I am Rhea.');
+    }
+);
+
 const port = 3000;
 app.listen(process.env.port || port);
 console.log('Web Server is listening at port ' + (process.env.port || port));
